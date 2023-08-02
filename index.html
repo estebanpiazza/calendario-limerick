@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Calendario Limerick</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/quasar@1.5.7/dist/quasar.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="q-app">
+  <div class="row q-gutter-md">
+    
+<!--     <q-select class="col-2" v-model="mini" :options="miniOptions" label="Mini mode" outlined="outlined" dense="dense" options-dense="options-dense"></q-select>
+
+ -->    <!-- <q-toggle v-model="dark">Modo Oscuro</q-toggle> -->
+<!--     <q-select class="col" v-model="firstDayWeek" label="First day week" outlined="outlined" dense="dense" options-dense="options-dense" :options="days" map-options="map-options" emit-value="emit-value"></q-select>
+ -->  
+ 
+</div>
+<ul>
+  <li><a class="active" href="#">Limerick's Calendar</a></li>
+  <li><a href="#" style="background-color: #044068; color:white">Nivel Inicial</a></li>
+  <li><a href="#" style="background-color: #811117; color:white">Nivel Primaria</a></li>
+  <li><a href="#" style="background-color: #113119; color:white">Nivel Medio</a></li>
+</ul>
+<br/>
+
+  <q-calendar :events="events" @event="onEvent" :mini="mini" :dark="dark" :first-day-week="firstDayWeek"></q-calendar>
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/quasar@1.5.7/dist/quasar.umd.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

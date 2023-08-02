@@ -1,0 +1,253 @@
+/** TEXT */
+/** TEXT */
+.calendar-event-sub {
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1.2em;
+  font-size: 1.2em;
+  min-width: 0;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-right: 4px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+.calendar-event-sub .q-icon {
+  font-size: inherit;
+  line-height: inherit;
+}
+.q-calendar .calendar-day,
+.q-calendar .calendar-week-item {
+  width: 14.285%;
+}
+.q-calendar .calendar-event {
+  width: 14.285%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 1px rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12);
+  font-size: 0.8em;
+  cursor: pointer;
+  margin: 2px 0;
+  padding: 4px 6px;
+  color: #fff;
+  background-color: #4c7aae;
+  position: relative;
+}
+.q-calendar .calendar-event.calendar-event-void {
+  color: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  cursor: auto;
+}
+.q-calendar .calendar-event.calendar-event-first {
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+.q-calendar .calendar-event.calendar-event-last {
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+.q-calendar .calendar-event-size-1 {
+  width: 14.28%;
+}
+.q-calendar .calendar-event-size-2 {
+  width: 28.57%;
+}
+.q-calendar .calendar-event-size-3 {
+  width: 42.85%;
+}
+.q-calendar .calendar-event-size-4 {
+  width: 57.14%;
+}
+.q-calendar .calendar-event-size-5 {
+  width: 71.42%;
+}
+.q-calendar .calendar-event-size-6 {
+  width: 85.71%;
+}
+.q-calendar .calendar-event-size-7 {
+  width: 100%;
+}
+.q-calendar .calendar-header .calendar-header-title {
+  text-align: center;
+  font-weight: 600;
+}
+.q-calendar .calendar-header {
+  padding: 2px;
+}
+.q-calendar .calendar-body {
+  padding: 0;
+}
+.q-calendar .calendar-body .calendar-week {
+  border-top: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
+  color: #757575;
+}
+.q-calendar .calendar-body .calendar-week .calendar-week-item {
+  font-size: 1em;
+  text-align: center;
+  border-right: 1px solid #bdbdbd;
+  padding: 2px;
+}
+.q-calendar .calendar-body .calendar-week .calendar-week-item:last-child {
+  border-right: none;
+}
+.q-calendar .calendar-body .calendar-content .calendar-week-row {
+  border-bottom: 1px solid #bdbdbd;
+  min-height: 6em;
+  position: relative;
+}
+.q-calendar .calendar-body .calendar-content .calendar-week-row:last-child {
+  border-bottom: none;
+}
+.q-calendar .calendar-body .calendar-content .calendar-week-row .calendar-week-days {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.q-calendar .calendar-body .calendar-content .calendar-week-row .calendar-week-events {
+  padding-top: 2em;
+}
+.q-calendar .calendar-body .calendar-content .calendar-day {
+  border-right: 1px solid #bdbdbd;
+  position: relative;
+}
+.q-calendar .calendar-body .calendar-content .calendar-day:last-child {
+  border-right: none;
+}
+.q-calendar .calendar-body .calendar-content .calendar-day .calendar-day-number {
+  font-size: 0.9em;
+  height: 2em;
+  width: 2em;
+  text-align: center;
+  line-height: 2em;
+}
+.q-calendar .calendar-body .calendar-content .calendar-day.calendar-day-current .calendar-day-number {
+  border-radius: 50%;
+  color: #fff;
+  background-color: #4c7aae !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 1px rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12);
+}
+.q-calendar .calendar-body .calendar-content .calendar-day.calendar-day-other .calendar-day-number {
+  opacity: 0.6;
+}
+.q-calendar .calendar-body .calendar-content .calendar-day.calendar-day-holiday {
+  color: #f00;
+}
+.q-calendar.mobile .calendar-body {
+  padding: 0;
+}
+.q-calendar.mobile .calendar-body .calendar-week {
+  padding: 0;
+  border: none;
+}
+.q-calendar.mobile .calendar-body .calendar-week-item {
+  text-align: center;
+  padding-left: 1em;
+  display: block;
+  visibility: hidden;
+  border: none;
+}
+.q-calendar.mobile .calendar-body .calendar-week-item:first-letter {
+  visibility: visible;
+}
+.q-calendar.mobile .calendar-body .calendar-content .calendar-week-row {
+  min-height: 3em;
+  border: none;
+}
+.q-calendar.mobile .calendar-body .calendar-content .calendar-week-row .calendar-day-number {
+  width: 3em;
+  height: 3em;
+  margin: 0 auto;
+  line-height: 3em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.q-calendar.mobile .calendar-body .calendar-content .calendar-week-row .calendar-day-number:hover,
+.q-calendar.mobile .calendar-body .calendar-content .calendar-week-row .calendar-day-number:focus {
+  background-color: rgba(0,0,0,0.1);
+}
+.q-calendar.mobile .calendar-body .calendar-content .calendar-day {
+  border: none;
+}
+.q-calendar.mobile .calendar-body .calendar-content .calendar-day.calendar-day-event:after {
+  content: '';
+  position: absolute;
+  background-color: #4c7aae;
+  width: 0.6em;
+  height: 0.4em;
+  border-radius: 50%;
+  bottom: 0.4em;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 1px 1px rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12);
+}
+.q-calendar.mobile .calendar-body .calendar-content .calendar-day.calendar-day-event.calendar-day-current:after {
+  background-color: #fff;
+}
+.q-modal-month .q-list {
+  padding: 0;
+  border: 0;
+}
+.q-modal-month .calendar-month-detail.q-item {
+  border-width: 1px 0 0 0.3rem;
+  border-style: solid;
+  margin: 2px 0 0 0;
+  border-top: none;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+.q-modal-month .q-card {
+  background-color: #eee;
+}
+.q-modal-month .calendar-chip {
+  background-color: #562598;
+  color: #fff;
+  border-radius: 8px;
+  width: 30px;
+  height: 16px;
+  text-align: center;
+  line-height: 16px;
+}
+.q-modal-month .calendar-event-sub {
+  margin-right: 0;
+  width: auto;
+  height: auto;
+  color: #000;
+  display: flex;
+}
+
+/*---------------------------------*/
+ul {
+  list-style-type: none;
+  margin-top: 2vh;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #04AA6D;
+}
